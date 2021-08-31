@@ -1,11 +1,4 @@
 class Car:
-  color = ''
-  model = ''
-  year = 0
-  max_speed = 0
-  mileage = 0
-  cur_speed = 0
-
   def __init__(self, color, model, year, max_speed, mileage, cur_speed):
     self.color = color
     self.model = model
@@ -26,7 +19,6 @@ class Car:
     '''Decrease current speed by 20%'''
     self.cur_speed *= 0.8
     self.print_speed()
-
   
 car = Car('blue', 'Corolla', 2007, 100, 40, 0)
 
