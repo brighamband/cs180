@@ -8,7 +8,8 @@ def main(n):
   for i in range(1, n+1):
     cube = i**3
     first_digit = cube
-    while (first_digit >= 10):
+    # Trick to isolate the first digit
+    while (first_digit >= 10):  
       first_digit = first_digit // 10
     
     if (first_digit % 2 == 0):  # If even
