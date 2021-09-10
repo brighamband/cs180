@@ -19,7 +19,7 @@ def main(n):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("n", type=int, help="Provide an integer")
+    parser.add_argument("--n", type=int, help="Provide an integer", required=True)
     args = parser.parse_args()
 
     total = main(args.n)
