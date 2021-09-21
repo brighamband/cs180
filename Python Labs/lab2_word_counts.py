@@ -19,12 +19,12 @@ def main(input_str):
   for word in words:
     output_dict[word] = words.count(word)
 
-  with open("word-counts.json", "w") as f:
+  with open("lab2_word-counts.json", "w") as f:
     f.write(json.dumps(output_dict))
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("string", type=str, help="Provide an input string")
+    parser.add_argument("-str", "--string", type=str, help="Provide an input string", required=True)
     args = parser.parse_args()
 
     main(args.string)
