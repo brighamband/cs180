@@ -55,9 +55,11 @@ def main(array, num_bins):
 
   bins = make_bins(array, num_bins, bin_width, init_lower_b, init_upper_b)
  
+  # Print entire bins array
   print(bins)
   print()
 
+  # Prints bins individually
   print_bins(bins, bin_width, init_lower_b, init_upper_b)
 
 if __name__ == "__main__":
