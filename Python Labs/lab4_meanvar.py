@@ -22,7 +22,7 @@ def main(array):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("-a", "--array", nargs="+", type=int, help="An array of which you want to know the mean and variance", required=True)
+    parser.add_argument("-a", "--array", nargs="+", type=float, help="An array of which you want to know the mean and variance", required=True)
     args = parser.parse_args()
 
     main(args.array)
